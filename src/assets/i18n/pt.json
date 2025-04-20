@@ -1,0 +1,21 @@
+{
+    "navbar": {
+        "about":"Sobre",
+        "portfolio": "Portfolio",
+        "resume": "Resumo",
+        "contact": "Contato"
+    },
+    "about": {
+    "iama": "Eu sou um"
+    },
+    "portfolio": {
+
+    },
+    "resume": {
+
+    },
+    "contact": {
+
+    },
+    "title": "Titulo"
+}

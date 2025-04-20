@@ -1,0 +1,11 @@
+<div class="bg-(--app-dark-grey-bg) flex justify-between p-3 border-b-1 border-(--app-border-clr)">
+    <span class="text-(--app-title-text-clr) text-2xl font-bold">Leandro Reis</span>
+    <select 
+        [(ngModel)]="selectedLanguage" 
+        (change)="onLanguageChange()"
+        class="bg-(--app-dark-grey-bg) text-(--app-text-clr)"
+    >
+        <option value="en">EN</option>
+        <option value="pt">PT</option>
+    </select>
+</div>

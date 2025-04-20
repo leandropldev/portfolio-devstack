@@ -1,0 +1,46 @@
+[
+    { 
+        "type": "command",  
+        "text": "whoami" 
+    },
+    {   
+        "type": "response", 
+        "text": "Desenvolvedor full stack, apaixonado por tecnologia e sempre em busca de novos desafios. Mais de 7 anos de experiência, se especializando em microsserviços e soluções em nuvem." 
+    },
+    {   
+        "type": "response", 
+        "text": " " 
+    },
+    {   
+        "type": "command",  
+        "text": "tech-stack --full" 
+    },
+    {   
+        "type": "response", 
+        "text": "Backend: com Java e Spring Boot." 
+    },
+    {   
+        "type": "response", 
+        "text": "Frontend: JavaScript e Angular." 
+    },
+    {   
+        "type": "response", 
+        "text": "DevOps e cloud: AWS (Lambda, API Gateway, EC2, S3, CodePipeline)" 
+    },
+    {   
+        "type": "response", 
+        "text": "Terraform e Github Actions" 
+    },
+    {   
+        "type": "response", 
+        "text": " " 
+    },
+    {   
+        "type": "command",  
+        "text": "objetivo" 
+    },
+    {   
+        "type": "response", 
+        "text": "Criar soluções eficientes, escaláveis e bem pensadas — do código ao deploy. Gosto de trabalhar com times que valorizam boas práticas, colaboração e aprendizado contínuo. Meu objetivo é sempre crescer como profissional e ajudar os projetos (e as pessoas) ao meu redor a crescerem também." 
+    }
+]
