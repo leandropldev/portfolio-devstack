@@ -7,7 +7,8 @@ import { EducationComponent } from './pages/home/education/education.component';
 export const routes: Routes = [
     {
         path: '',
-        component: AboutComponent
+        redirectTo: '/about',
+        pathMatch: 'full'
     },
     {
         path: 'about',
