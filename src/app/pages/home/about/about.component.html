@@ -1,9 +1,9 @@
-<div class="flex flex-col-reverse py-1 md:flex-row md:py-5 md:gap-1">
+<div class="flex flex-col-reverse py-1 md:flex-row md:gap-1">
     <section class="basis-2/4 ml-2 flex justify-start">
         <div>
             <ng-container *ngFor="let line of displayedLines; let idx = index">
                 <div [class.pl-6]="lines[idx].type === 'response'" class="whitespace-pre-wrap">
-                    <span *ngIf="lines[idx].type === 'command'" class="text-[#66d9ef]"> 
+                    <span *ngIf="lines[idx].type === 'command'" class="text-(--app-title-text-clr)"> 
                         C:\> 
                     </span>
                     {{ line }}

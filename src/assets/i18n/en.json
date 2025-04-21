@@ -2,10 +2,10 @@
     "title": "Title",
     "home": {
         "tabMenu": {
-            "about":"About.java",
-            "career": "Career.css",
-            "education": "Education.ts",
-            "contact": "Contact.tf"
+            "about":"about.java",
+            "career": "career.css",
+            "education": "education.ts",
+            "contact": "contact.tf"
         }
     },
     "portfolio": {

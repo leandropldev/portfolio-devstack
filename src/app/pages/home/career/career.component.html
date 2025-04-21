@@ -1,4 +1,5 @@
-<section>
-    <h3>Career</h3>
-    <app-card></app-card>
+<section class="flex flex-col gap-4">
+    @for(card of cards; track $index){
+        <app-card [card]="card"></app-card>
+    }
 </section>
