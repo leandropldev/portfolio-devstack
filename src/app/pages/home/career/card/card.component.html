@@ -1,4 +1,4 @@
-<section class="flex flex-col gap-2 border-1 border-(--app-border-clr) rounded-md overflow-hidden bg-(--app-light-grey-bg)">
+<section class="flex flex-col gap-2 border-1 border-(--app-border-clr) rounded-md overflow-hidden bg-(--app-light-grey-bg) p-2">
     
     <header>
         <h3 class="text-xl text-(--app-title-text-clr) font-extrabold">
@@ -17,19 +17,17 @@
         </h4>
     </header>
 
-    <body>
-        <ul>
-            @for(activity of card.activities; track $index){
-                <li>
-                    ✓ {{activity}}
-                </li>
-            }
-        </ul>
-    </body>
+    <ul>
+        @for(activity of card.activities; track $index){
+            <li>
+                ✓ {{activity}}
+            </li>
+        }
+    </ul>
 
-    <footer class="flex justify-normal flex-wrap">
+    <footer class="flex justify-normal flex-wrap gap-0.5">
         @for(stack of card.stacks; track $index){
-            <div>{{stack}}</div>
+            <div class="bg-(--app-border-clr) rounded-xl px-1">{{stack}}</div>
         }
     </footer>  
 
