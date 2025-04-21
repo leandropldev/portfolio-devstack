@@ -1,25 +1,37 @@
-<section class=" flex flex-col border-1 border-(--app-border-clr) rounded-md overflow-hidden bg-(--app-light-grey-bg)">
-    <h3 class="text-xl text-(--app-title-text-clr) font-extrabold">{{card.position}}</h3>
-    <h4 class="flex gap-2 text-xl text-(--app-sub-title-text-clr) font-bold">
-        <img 
-            class="h-5" 
-            src="https://flagcdn.com/24x18/{{card.companyCountry}}.png" 
-            alt="{{card.companyCountry}}"
-        >
-        {{card.company}}  
-    </h4>
-    <h4 class="text-(--app-sub-title-text-clr)">{{card.dateBegin}} - {{card.dateEnd}}</h4>
-    <ul>
-        @for(activity of card.activities; track $index){
-            <li>
-                ✓ {{activity}}
-            </li>
-        }
-    </ul>
-    <section class="flex justify-normal gap-2 flex-wrap">
+<section class="flex flex-col gap-2 border-1 border-(--app-border-clr) rounded-md overflow-hidden bg-(--app-light-grey-bg)">
+    
+    <header>
+        <h3 class="text-xl text-(--app-title-text-clr) font-extrabold">
+            {{card.position}}
+        </h3>
+        <h4 class="flex gap-2 text-xl text-(--app-sub-title-text-clr) font-bold">
+            <img 
+                class="h-5" 
+                src="https://flagcdn.com/24x18/{{card.companyCountry}}.png" 
+                alt="{{card.companyCountry}}"
+            >
+            {{card.company}}  
+        </h4>
+        <h4 class="text-(--app-sub-title-text-clr)">
+            {{card.dateBegin}} - {{card.dateEnd}}
+        </h4>
+    </header>
+
+    <body>
+        <ul>
+            @for(activity of card.activities; track $index){
+                <li>
+                    ✓ {{activity}}
+                </li>
+            }
+        </ul>
+    </body>
+
+    <footer class="flex justify-normal flex-wrap">
         @for(stack of card.stacks; track $index){
-            <span>{{stack}}</span>
+            <div>{{stack}}</div>
         }
-    </section>  
+    </footer>  
+
 </section>
 
