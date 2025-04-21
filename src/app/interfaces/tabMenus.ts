@@ -1,4 +1,4 @@
 export interface TabMenus {
-    name: string,
+    langKeyMenu: string,
     link: string
 }

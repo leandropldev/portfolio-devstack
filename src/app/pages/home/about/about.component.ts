@@ -1,7 +1,10 @@
 import { Component, Inject, OnDestroy, OnInit, PLATFORM_ID } from '@angular/core';
 import { InputLineCommand } from '../../../interfaces/inputLinesCommand';
 import { CommonModule, isPlatformServer } from '@angular/common';
-import jsonData from '../../../../assets/data/about.json';
+import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
+import aboutEnData from '../../../../assets/data/en-about.json';
+import aboutPtData from '../../../../assets/data/pt-about.json';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -11,26 +14,35 @@ import jsonData from '../../../../assets/data/about.json';
 })
 export class AboutComponent implements OnInit, OnDestroy {
   
-  lines: InputLineCommand[] = jsonData;
+  lines: InputLineCommand[] = [];
   displayedLines: string[] = [];
   currentLineIndex = 0;
   interval: any;
-  cursorBlinking: boolean = true;
+  isTyping: boolean = true;
 
-  constructor(@Inject(PLATFORM_ID) private platform: Object) {}
+  constructor(
+    @Inject(PLATFORM_ID) private platform: Object,
+    private translateService: TranslateService,
+    private router: Router
+  ) {}
   
   ngOnInit(): void {
+    this.defineAboutJsonFile(this.translateService.currentLang || 'en');
     if (!isPlatformServer(this.platform)) {
       this.typeNextLine();
     }
+
+    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.defineAboutJsonFile(event.lang);
+      this.reloadPage();
+    });
   }
 
   private typeNextLine(): void {
     if (this.currentLineIndex >= this.lines.length) {
-      this.cursorBlinking = false;
+      this.isTyping = false;
       return;
     }
-    this.cursorBlinking = true;
     const line: InputLineCommand = this.lines[this.currentLineIndex];
     let text = '';
     
@@ -45,6 +57,17 @@ export class AboutComponent implements OnInit, OnDestroy {
         setTimeout(() => this.typeNextLine(), 400);
       }
     }, 30);
+  }
+
+  private defineAboutJsonFile(lang: string) {
+    this.lines = lang === 'en' ? aboutEnData : aboutPtData;
+  }
+
+  private reloadPage(){
+    let currentUrl = this.router.url;
+    this.router.navigateByUrl('/career', { skipLocationChange: true }).then(() => {
+      this.router.navigate([currentUrl]);
+    });
   }
 
   ngOnDestroy() {

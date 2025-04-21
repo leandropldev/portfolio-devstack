@@ -1,12 +1,12 @@
 {
-    "navbar": {
-        "about":"About",
-        "portfolio": "Portfolio",
-        "resume": "Resume",
-        "contact": "Contact"
-    },
-    "about": {
-        "iama": "I am a"
+    "title": "Title",
+    "home": {
+        "tabMenu": {
+            "about":"About.java",
+            "career": "Career.css",
+            "education": "Education.ts",
+            "contact": "Contact.tf"
+        }
     },
     "portfolio": {
 
@@ -16,6 +16,5 @@
     },
     "contact": {
 
-    },
-    "title": "Title"
+    }
 }

@@ -21,7 +21,9 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/assets"
+              "src/assets",
+              "src/assets/i18n",
+              "src/assets/images"
             ],
             "styles": [
               "src/styles.css"

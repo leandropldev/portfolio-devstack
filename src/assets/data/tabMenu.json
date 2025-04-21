@@ -1,0 +1,18 @@
+[
+    {
+        "langKeyMenu": "home.tabMenu.about",
+        "link": "about"
+    },
+    {
+        "langKeyMenu": "home.tabMenu.career",
+        "link": "career"
+    },
+    {
+        "langKeyMenu": "home.tabMenu.education",
+        "link": "education"
+    },
+    {
+        "langKeyMenu": "home.tabMenu.contact",
+        "link": "contact"
+    }
+]

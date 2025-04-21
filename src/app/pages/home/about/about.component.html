@@ -9,13 +9,13 @@
                     {{ line }}
                 </div>
             </ng-container>
-            <div *ngIf="cursorBlinking" class="inline-block w-1 h-4 bg-green-400 animate-blink-cursor ml-3"></div>
+            <div *ngIf="isTyping" class="inline-block w-1 h-4 bg-green-400 animate-blink-cursor ml-3"></div>
         </div>
     </section>
 
     <section class="basis-2/4 flex justify-center">
-        <figure class="static max-w-sm transition-all duration-300 filter grayscale-0 md:grayscale-60 hover:grayscale-0">  
-            <img class="rounded-lg scale-90 md:scale-100" src="assets/images/picture.jpg" alt="prod deploy jump">
+        <figure class="static max-w-sm transition-all duration-300 filter grayscale-0 md:grayscale-50 hover:grayscale-0">  
+            <img class="rounded-lg scale-90 md:scale-100 xl:h-full" src="assets/images/picture.jpg" alt="prod deploy jump">
             <figcaption class="relative px-4 text-lg text-white bottom-18 md:bottom-15">
                 <p class="text-center font-bold scale-90 ">Friday 5pm after a prod deployment with no tests</p>
             </figcaption>

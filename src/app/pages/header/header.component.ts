@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   imports: [
-    FormsModule
+    FormsModule,
+    TranslateModule
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
@@ -12,7 +14,9 @@ import { FormsModule } from '@angular/forms';
 export class HeaderComponent {
   selectedLanguage = 'en';
 
+  constructor(private translateService: TranslateService){}
+  
   onLanguageChange() {
-    console.info(this.selectedLanguage)
+    this.translateService.use(this.selectedLanguage);
   }
 }
