@@ -28,7 +28,7 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: var(--app-light-grey-bg);
-    color: var(--app-text-clr);
+  font-family: 'Courier New', Courier, monospace;
+  background-color: var(--app-light-grey-bg);
+  color: var(--app-text-clr);
 }
