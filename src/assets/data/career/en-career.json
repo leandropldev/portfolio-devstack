@@ -1,0 +1,113 @@
+[
+    {
+        "position": "FullStack Developer",
+        "company": "Wafx Portugal",
+        "companyCountry": "pt",
+        "dateBegin": "September 2022",
+        "dateEnd": "Present",
+        "activities": [
+            "Incorporated third-party APIs into the web application for data exchange and real-time updates",
+            "Utilized Java frameworks such as Spring, Hibernate and Angular",
+            "Implemented a CI/CD pipeline for testing and deployment",
+            "AWS resources creation and maintenance (EC2, ELB, Gateway)"
+        ],
+        "stacks": [
+            "Spring Boot",
+            "Angular",
+            "Argos CD",
+            "Docker",
+            "PostgreSQL",
+            "Git Corp",
+            "Scrum",
+            "Mockito",
+            "Junit",
+            "Jest",
+            "AWS S3"
+        ]
+    },
+    {
+        "position": "Senior Engineer / Tech Lead",
+        "company": "Itau Unibanco",
+        "companyCountry": "br",
+        "dateBegin": "January 2020",
+        "dateEnd": " September 2022",
+        "activities": [
+            "Utilized object-oriented programming to create a reusable codebase, resulting in a reduction in development time",
+            "Developed data pipelines in AWS cloud-native environment",
+            "Developed web applications using Java spring-boot", 
+            "Developed an asynchronous messaging system using Kafka and RabbitMQ", 
+            "Implemented HTML/CSS/JS over Adobe Experience Manager containners and Angular over S3 to deliver frontend solutions"
+        ],
+        "stacks": [
+            "Spring boot",
+            "HTML", 
+            "CSS", 
+            "JavaScript", 
+            "Oracle", 
+            "AWS (lambda, S3, EKS, ECS, Terraform, Cloud formation, RDS)", 
+            "Scrum", 
+            "Mockito", 
+            "Junit", 
+            "Jest"
+        ]
+    },
+    {
+        "position": "Java Developer",
+        "company": "Everis",
+        "companyCountry": "br",
+        "dateBegin": "April 2019",
+        "dateEnd": "December 2019",
+        "activities": [
+            "Developed a REST API that enabled integration with third-party services, resulting in a increase in customer retention",
+            "Collaborated with other developers to ensure shared code was of high quality and met design specifications",
+            "Developed unit tests to ensure code quality and ensure compliance with software development best practices", 
+            "Developed web applications using Java spring-boot"
+        ],
+        "stacks": [
+            "Spring boot", 
+            "Jenkins", 
+            "Oracle", 
+            "Scrum", 
+            "Mockito", 
+            "Junit" 
+        ]
+    },
+    {
+        "position": "Java Developer",
+        "company": "Indra do Brasil",
+        "companyCountry": "br",
+        "dateBegin": "August 2018",
+        "dateEnd": "March 2019",
+        "activities": [
+            "Designed and implemented a secure authentication system that used", 
+            "OAuthX for user authorization and authentication",
+            "Developed an asynchronous messaging system using JMS",  
+            "Developed web applications using Java spring-boot", 
+            "Implemented a microservices architecture that improved system modularity and reduced dependencies between components"
+        ],
+        "stacks": [
+            "Spring boot", 
+            "Jenkins", 
+            "Oracle", 
+            "Scrum", 
+            "Oracle 11g"
+        ]
+    },
+    {
+        "position": "Java Developer",
+        "company": "Coddera",
+        "companyCountry": "br",
+        "dateBegin": "April 2016",
+        "dateEnd": "July 2018",
+        "activities": [
+            "Developed and maintained an up-to-date database, ensuring accurate and timely communication",
+            "Collaborated with other developers to ensure shared code was of high quality and met design specifications"
+        ],
+        "stacks": [
+            "Soap", 
+            "XML", 
+            "Java", 
+            "Oracle DB"
+        ]
+    }
+]

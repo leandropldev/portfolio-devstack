@@ -15,7 +15,7 @@ export class HeaderComponent {
   selectedLanguage = 'en';
 
   constructor(private translateService: TranslateService){}
-  
+
   onLanguageChange() {
     this.translateService.use(this.selectedLanguage);
   }

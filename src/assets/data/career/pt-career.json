@@ -1,0 +1,112 @@
+[
+    {
+        "position": "Desenvolvedor FullStack",
+        "company": "Wafx Portugal",
+        "companyCountry": "pt",
+        "dateBegin": "Setembro 2022",
+        "dateEnd": "Atual",
+        "activities": [
+            "Incorporei APIs de terceiros ao aplicativo web para troca de dados e atualizações em tempo real",
+            "Utilizei frameworks Java como Spring, Hibernate e Angular",
+            "Implementei um pipeline de CI/CD para testes e implantação",
+            "Criação e manutenção de recursos da AWS (EC2, ELB, Gateway)"
+        ],
+        "stacks": [
+            "Spring Boot",
+            "Angular",
+            "Argos CD",
+            "Docker",
+            "PostgreSQL",
+            "Git Corp",
+            "Scrum",
+            "Mockito",
+            "Junit",
+            "Jest",
+            "AWS S3"
+        ]
+    },
+    {
+        "position": "Engenheiro Senior / Lider Técnico",
+        "company": "Itau Unibanco",
+        "companyCountry": "br",
+        "dateBegin": "Janeiro 2020",
+        "dateEnd": " Setembro 2022",
+        "activities": [
+            "Utilizou programação orientada a objetos para criar uma base de código reutilizável, resultando na redução do tempo de desenvolvimento",
+            "Desenvolveu pipelines de dados em ambiente nativo de nuvem da AWS",
+            "Desenvolveu aplicações web usando Java spring-boot",
+            "Desenvolveu um sistema de mensagens assíncronas usando Kafka e RabbitMQ",
+            "Implementou HTML/CSS/JS em contêineres do Adobe Experience Manager e Angular em S3 para fornecer soluções front-end"
+        ],
+        "stacks": [
+            "Spring boot",
+            "HTML", 
+            "CSS", 
+            "JavaScript", 
+            "Oracle", 
+            "AWS (lambda, S3, EKS, ECS, Terraform, Cloud formation, RDS)", 
+            "Scrum", 
+            "Mockito", 
+            "Junit", 
+            "Jest"
+        ]
+    },
+    {
+        "position": "Desenvolvedor Java",
+        "company": "Everis",
+        "companyCountry": "br",
+        "dateBegin": "Abril 2019",
+        "dateEnd": "Dezembro 2019",
+        "activities": [
+            "Desenvolveu uma API REST que permitiu a integração com serviços de terceiros, resultando em um aumento na retenção de clientes",
+            "Colaborou com outros desenvolvedores para garantir que o código compartilhado fosse de alta qualidade e atendesse às especificações de design",
+            "Desenvolveu testes unitários para garantir a qualidade do código e a conformidade com as melhores práticas de desenvolvimento de software",
+            "Desenvolveu aplicações web usando Java spring-boot"
+        ],
+        "stacks": [
+            "Spring boot", 
+            "Jenkins", 
+            "Oracle", 
+            "Scrum", 
+            "Mockito", 
+            "Junit" 
+        ]
+    },
+    {
+        "position": "Desenvolvedor Java",
+        "company": "Indra do Brasil",
+        "companyCountry": "br",
+        "dateBegin": "Agosto 2018",
+        "dateEnd": "Março 2019",
+        "activities": [
+            "Projetou e implementou um sistema de autenticação seguro que utilizava OAuthX para autorização e autenticação de usuários",
+            "Desenvolvi um sistema de mensagens assíncronas utilizando JMS",
+            "Desenvolvi aplicações web utilizando Java spring-boot",
+            "Implementei uma arquitetura de microsserviços que melhorou a modularidade do sistema e reduziu as dependências entre os componentes"
+        ],
+        "stacks": [
+            "Spring boot", 
+            "Jenkins", 
+            "Oracle", 
+            "Scrum", 
+            "Oracle 11g"
+        ]
+    },
+    {
+        "position": "Desenvolvedor Java",
+        "company": "Coddera",
+        "companyCountry": "br",
+        "dateBegin": "Abril 2016",
+        "dateEnd": "Julho 2018",
+        "activities": [
+            "Desenvolveu e manteve um banco de dados atualizado, garantindo uma comunicação precisa e oportuna",
+            "Colaborou com outros desenvolvedores para garantir que o código compartilhado fosse de alta qualidade e atendesse às especificações de design"
+        ],
+        "stacks": [
+            "Soap", 
+            "XML", 
+            "Java", 
+            "Oracle DB"
+        ]
+    }
+]

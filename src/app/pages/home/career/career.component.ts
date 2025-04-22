@@ -1,67 +1,46 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CardComponent } from "./card/card.component";
 import { JobExperince } from '../../../interfaces/jobExperience';
+import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
+import careerEnData from '../../../../assets/data/career/en-career.json';
+import careerPtData from '../../../../assets/data/career/pt-career.json';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-career',
-  imports: [CardComponent],
+  imports: [
+    CardComponent
+  ],
   templateUrl: './career.component.html',
   styleUrl: './career.component.css'
 })
-export class CareerComponent {
+export class CareerComponent implements OnInit {
 
-  cards: JobExperince[] = [
-    {
-      position: "FullStack Developer",
-      company: "Wafx Portugal",
-      companyCountry: "pt",
-      dateBegin: "Setembro 2022",
-      dateEnd: "Present",
-      activities: [
-        "Incorporated third-party APIs into the web application for data exchange and real-time updates",
-        "Utilized Java frameworks such as Spring, Hibernate and Angular",
-        "Implemented a CI/CD pipeline for testing and deployment",
-        "AWS resources creation and maintenance (EC2, ELB, Gateway)"
-      ],
-      stacks: [
-        "Spring Boot",
-        "Angular",
-        "Argos CD",
-        "Docker",
-        "PostgreSQL",
-        "Git Corp",
-        "Scrum",
-        "Mockito",
-        "Junit",
-        "Jest",
-        "AWS"
-      ]
-    },
-    {
-      position: "FullStack bronha",
-      company: "Wafx Portugal",
-      companyCountry: "br",
-      dateBegin: "Setembro 2022",
-      dateEnd: "Present",
-      activities: [
-        "Incorporated third-party APIs into the web application for data exchange and real-time updates",
-        "Utilized Java frameworks such as Spring, Hibernate and Angular",
-        "Implemented a CI/CD pipeline for testing and deployment",
-        "AWS resources creation and maintenance (EC2, ELB, Gateway)"
-      ],
-      stacks: [
-        "Spring Boot",
-        "Angular",
-        "Argos CD",
-        "Docker",
-        "PostgreSQL",
-        "Git Corp",
-        "Scrum",
-        "Mockito",
-        "Junit",
-        "Jest",
-        "AWS"
-      ]
-    }
-  ]
+  cards: JobExperince[] = [];
+
+  constructor(
+    private translateService: TranslateService,
+    private router: Router
+  ) {}
+
+  ngOnInit(): void {
+    this.defineCareerJson(this.translateService.currentLang || 'en');
+
+    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.defineCareerJson(event.lang);
+      this.reloadPage();
+    });
+  }
+
+  private defineCareerJson(lang: string) {
+    this.cards = lang === 'en' ? careerEnData : careerPtData;
+  }
+
+  private reloadPage() {
+    let currentUrl = this.router.url;
+    this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+      this.router.navigate([currentUrl]);
+    });
+  }
 }

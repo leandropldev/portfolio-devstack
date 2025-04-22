@@ -8,13 +8,7 @@
             "contact": "contact.tf"
         }
     },
-    "portfolio": {
-
-    },
-    "resume": {
-
-    },
-    "contact": {
-
+    "about": {
+        "picture-caption": "Friday 5pm after a prod deployment with no tests"
     }
 }

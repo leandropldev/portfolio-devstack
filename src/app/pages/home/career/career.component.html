@@ -1,5 +1,11 @@
-<section class="flex flex-col gap-4">
-    @for(card of cards; track $index){
-        <app-card [card]="card"></app-card>
-    }
-</section>
+<div class=""> 
+    <section class="flex flex-col gap-4 ">
+        @for(card of cards; track $index){
+            <app-card 
+                class="{{ $index % 2 === 0 ? 'md:translate-x-0/5' : 'md:translate-x-3/5'}}
+                    md:hover:scale-101 md:hover:translate-y-1"
+                [card]="card" 
+            ></app-card>
+        }
+    </section>
+</div>

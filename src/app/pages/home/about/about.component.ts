@@ -1,14 +1,17 @@
 import { Component, Inject, OnDestroy, OnInit, PLATFORM_ID } from '@angular/core';
 import { InputLineCommand } from '../../../interfaces/inputLinesCommand';
 import { CommonModule, isPlatformServer } from '@angular/common';
-import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
-import aboutEnData from '../../../../assets/data/en-about.json';
-import aboutPtData from '../../../../assets/data/pt-about.json';
+import { LangChangeEvent, TranslateModule, TranslateService } from '@ngx-translate/core';
+import aboutEnData from '../../../../assets/data/about/en-about.json';
+import aboutPtData from '../../../../assets/data/about/pt-about.json';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about',
-  imports: [CommonModule],
+  imports: [
+    CommonModule, 
+    TranslateModule
+  ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
