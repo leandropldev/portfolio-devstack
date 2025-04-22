@@ -21,7 +21,7 @@
     }
   }
 
-  --animate-stretch-timeline: stretch-timeline 6s linear forwards;
+  --animate-stretch-timeline: stretch-timeline 5s linear forwards;
   @keyframes stretch-timeline {
     0% {
       height: 0;
