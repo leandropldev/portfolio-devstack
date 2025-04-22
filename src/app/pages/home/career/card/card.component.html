@@ -20,15 +20,15 @@
 
     <ul>
         @for(activity of card.activities; track $index){
-            <li>
-                ✓ {{activity}}
-            </li>
+            <li> ✓ {{activity}} </li>
         }
     </ul>
 
     <footer class="flex justify-normal flex-wrap gap-0.5">
         @for(stack of card.stacks; track $index){
-            <div class="bg-(--app-border-clr) rounded-xl px-1">{{stack}}</div>
+            <div class="bg-(--app-border-clr) rounded-xl px-1">
+                {{stack}}
+            </div>
         }
     </footer>  
 
