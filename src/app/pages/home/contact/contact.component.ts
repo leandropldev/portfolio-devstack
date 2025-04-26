@@ -1,13 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
+import { ContactMeLinks } from '../../../interfaces/contactMe';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   imports: [
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    TranslateModule
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
@@ -15,11 +18,33 @@ import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 export class ContactComponent {
 
   contactForm: FormGroup;
-  message: string = ''
+  formMessage: string = '';
+  imageUrl: string = '../assets/images/icons/';
 
-  constructor(private fb: FormBuilder) {
+  contactMeLinks: ContactMeLinks[] = [
+    {
+      name: 'LinkedIn',
+      icon: `${this.imageUrl}linkedin.png`,
+      url: 'https://www.linkedin.com/in/developer-reis/' 
+    },
+    {
+      name: 'GitHub',
+      icon: `${this.imageUrl}github.png`,
+      url: 'https://github.com/leandropldev'
+    },
+    {
+      name: 'Stack Overflow',
+      icon: `${this.imageUrl}stackoverflow.png`,
+      url: 'https://stackoverflow.com/users/7240745/leandropl'
+    } 
+  ]
+
+  constructor(
+    private fb: FormBuilder,
+    private translateService: TranslateService,
+  ) {
     this.contactForm = this.fb.group({
-      name: ['', [Validators.required, Validators.minLength(2)]],
+      name: ['', [Validators.required, Validators.minLength(5)]],
       email: ['', [Validators.required, Validators.email]],
       message: ['', [Validators.required, Validators.minLength(10)]],
     });
@@ -36,7 +61,7 @@ export class ContactComponent {
         )
         .then(
           () => {
-            this.message = 'Message sent successfully!';
+            this.updateMessage(this.translateService.instant('contact.form.success'));
             this.contactForm.reset();
           },
           (error) => {
@@ -44,5 +69,10 @@ export class ContactComponent {
           }
         );
     }
+  }
+
+  updateMessage(message: string): void {
+    this.formMessage = message;
+    setTimeout(() => this.formMessage = '', 3000);
   }
 }

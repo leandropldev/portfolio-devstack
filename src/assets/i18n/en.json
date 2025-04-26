@@ -1,5 +1,4 @@
 {
-    "title": "Title",
     "home": {
         "tabMenu": {
             "about":"about.java",
@@ -10,5 +9,25 @@
     },
     "about": {
         "picture-caption": "Friday 5pm after a prod deployment with no tests"
+    },
+    "contact": {
+        "title": "Contact Me",
+        "description": "Have a question or want to work together? Feel free to reach out by filling out the form below. I'll get back to you as soon as possible!",
+        "find-me-on": "You can also find me on:",
+        "form": {
+            "name": "Name",
+            "namePlaceHolder": "Your name",
+            "email": "Email",
+            "emailPlaceHolder": "Your email",
+            "message": "Message", 
+            "messagePlaceHolder": "Your message",
+            "submit": "Send Message",
+            "success": "Message sent successfully!",
+            "error": {
+                "name": "Invalid name (minimum 5 characters)",
+                "email": "Invalid email",
+                "message": "Invalid message (minimum 10 characters)"
+            }
+        }
     }
 }

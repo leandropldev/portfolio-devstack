@@ -1,57 +1,93 @@
-<section class="contact-section bg-(--app-dark-grey-bg) text-(--app-text-clr)">
-    <div class="contact-container max-w-7xl mx-auto px-3 lg:px-8 flex flex-col lg:flex-row gap-4">
+<section class="bg-(--app-dark-grey-bg) text-(--app-text-clr)">
+    <div class=" max-w-7xl mx-auto px-3 lg:px-8 flex flex-col lg:flex-row gap-8">
       <!-- Left Side: Description -->
       <div class="flex-1">
-        <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
-        <p>
-          Have a question or want to work together? Feel free to reach out by filling out the form below. I'll get back to you as soon as possible!
-        </p>
+        <h2 class="text-3xl font-bold mb-4">{{ 'contact.title' | translate}}</h2>
+        <p>{{ 'contact.description' | translate}}</p>
+        <p class="text-sm mt-8">{{ 'contact.find-me-on' | translate}}</p>
+        <div class="flex space-x-4 flex-wrap">
+          @for(link of contactMeLinks; track $index) {
+          <div class="flex items-center gap-2">
+              <img src="{{link.icon}}" class="h-5" />
+              <a href="{{link.url}}" target="_blank" class=" text-gray-500 hover:underline">{{link.name}}</a>
+            </div>
+          }
+        </div>
       </div>
   
       <!-- Right Side: Form -->
       <div class="flex-1 bg-(--app-light-grey-bg) p-6 rounded-lg shadow-lg">
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="space-y-6">
           <div>
-            <label for="name" class="block text-sm font-medium">Name</label>
+            <label for="name" class="block text-sm font-medium">{{'contact.form.name' | translate}}</label>
             <input
               type="text"
               id="name"
               formControlName="name"
-              placeholder="Your Name"
+              placeholder="{{'contact.form.namePlaceHolder' | translate}}"
               required
-              class="mt-1 block w-full px-4 py-2 bg-gray-700  border border-gray-600 rounded-md "
+              class="mt-1 block w-full px-4 py-2 border border-gray-600 rounded-md "
             />
           </div>
+          @if(contactForm.get('name')?.touched 
+            && contactForm.get('name')?.invalid) {
+            <div class="text-red-500 text-sm">
+              <span>
+                {{'contact.form.error.name' | translate}}
+              </span>
+            </div>
+          }
           <div>
-            <label for="email" class="block text-sm font-medium ">Email</label>
+            <label for="email" class="block text-sm font-medium ">{{'contact.form.email' | translate}}</label>
             <input
               type="email"
               id="email"
               formControlName="email"
-              placeholder="Your Email"
+              placeholder="{{'contact.form.emailPlaceHolder' | translate}}"
               required
-              class="mt-1 block w-full px-4 py-2 bg-gray-700  border border-gray-600 rounded-md"
+              class="mt-1 block w-full px-4 py-2 border border-gray-600 rounded-md"
             />
           </div>
+          @if(contactForm.get('email')?.touched 
+            && contactForm.get('email')?.invalid) {
+            <div class="text-red-500 text-sm">
+              <span>
+                {{'contact.form.error.email' | translate}}
+              </span>
+            </div>
+          }
           <div>
-            <label for="message" class="block text-sm font-medium">Message</label>
+            <label for="message" class="block text-sm font-medium">{{'contact.form.message' | translate}}</label>
             <textarea
               id="message"
               formControlName="message"
               rows="5"
-              placeholder="Your Message"
+              placeholder="{{'contact.form.messagePlaceHolder' | translate}}"
               required
-              class="mt-1 block w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md"
+              class="mt-1 block w-full px-4 py-2 border border-gray-600 rounded-md"
             ></textarea>
           </div>
+          @if(contactForm.get('message')?.touched 
+            && contactForm.get('message')?.invalid) {
+            <div class="text-red-500 text-sm">
+              <span>
+                {{'contact.form.error.message' | translate}}
+              </span>
+            </div>
+          }
+
+          <span *ngIf="formMessage" class="text-red-500 text-sm"> {{formMessage}} </span>
+
           <button
             type="submit"
-            class="w-full bg-(--app-border-clr) hover:bg-(--app-dark-grey-bg) hover:font-bold font-medium py-2 px-4 rounded-md transition duration-300"
+            class="w-full bg-gray-700 hover:font-bold font-medium py-2 px-4 rounded-md transition duration-300'
+            {{contactForm.invalid ? 'opacity-50 cursor-not-allowed' : 'opacity-100'}}"
             [disabled]="contactForm.invalid"
           >
-            Send Message
+          {{'contact.form.submit' | translate}}
           </button>
         </form>
+        
       </div>
     </div>
   </section>

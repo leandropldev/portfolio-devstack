@@ -10,5 +10,25 @@
     },
     "about": {
         "picture-caption": "Sexta-feira 5 da tarde depois de um deploy em prod sem testes"
+    },
+    "contact": {
+        "title": "Entre em Contato",
+        "description": "Você tem uma pergunta ou quer trabalhar junto? Fique à vontade para entrar em contato preenchendo o formulário abaixo. Eu responderei assim que possível!",
+        "find-me-on": "Você também pode me encontrar em:",
+        "form": {
+            "name": "Nome",
+            "namePlaceHolder": "Seu Nome",
+            "email": "Email",
+            "emailPlaceHolder": "Seu email",
+            "message": "Mensagem", 
+            "messagePlaceHolder": "Sua message",
+            "submit": "Enviar Mensagem",
+            "success": "Mensagem enviada com sucesso!",
+            "error": {
+                "name": "Nome inválido (mínimo 5 caracteres)",
+                "email": "Email inválido",
+                "message": "Mensagem inválida (mínimo 10 caracteres)"
+            }      
+        }
     }
 }
