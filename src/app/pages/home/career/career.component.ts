@@ -45,8 +45,4 @@ export class CareerComponent implements OnInit {
       this.router.navigate([currentUrl]);
     });
   }
-
-  calc(value: any){
-    
-  }
 }
