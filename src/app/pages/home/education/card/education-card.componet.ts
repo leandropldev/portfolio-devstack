@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, EventEmitter, Input, Output } from "@angular/core";
 import { Education } from "../../../../interfaces/education";
 import { CommonModule } from "@angular/common";
 
@@ -13,4 +13,9 @@ import { CommonModule } from "@angular/common";
 export class EducationCardComponent {
   @Input() card!: Education;
   @Input() showContent: boolean = false;
+  @Output() activeCard = new EventEmitter<number>();
+
+  toggleVisibility(cardId : number) {
+    this.activeCard.emit(cardId);
+  }
 }      

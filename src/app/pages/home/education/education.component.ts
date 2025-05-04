@@ -14,6 +14,7 @@ import { EducationCardComponent } from "./card/education-card.componet";
 })
 export class EducationComponent {
   educationCards: Education[] = [];
+  activeCardId: number = 0;
 
   constructor(
     private translateService: TranslateService,
@@ -25,6 +26,10 @@ export class EducationComponent {
         this.defineEducationJson(event.lang);
     });
   }
+
+  onActiveCardChange(cardId: number) {
+    this.activeCardId = cardId;
+  }   
 
   private defineEducationJson(lang: string) {
     this.educationCards = lang === 'en' ? educationEnData : educationPnData;

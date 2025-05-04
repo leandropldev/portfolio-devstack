@@ -66,7 +66,7 @@ export class AboutComponent implements OnInit, OnDestroy {
     this.lines = lang === 'en' ? aboutEnData : aboutPtData;
   }
 
-  private reloadPage(){
+  private reloadPage(){ 
     let currentUrl = this.router.url;
     this.router.navigateByUrl('/career', { skipLocationChange: true }).then(() => {
       this.router.navigate([currentUrl]);
