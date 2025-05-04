@@ -13,8 +13,6 @@
     {
         "id": 1,
         "type": "Especialization",
-<<<<<<< HEAD
-=======
         "title": "Bachelor of Science in Computer Science",
         "institution": "University of Technology",
         "location": "City, Country",
@@ -27,7 +25,6 @@
     {
         "id": 2,
         "type": "Especialization",
->>>>>>> ff826ac7825a734aa48bfdb41d77be7ec9cfc5fb
         "title": "Bachelor of Science in Computer Science",
         "institution": "University of Technology",
         "location": "City, Country",
