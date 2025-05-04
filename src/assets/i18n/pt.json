@@ -1,5 +1,4 @@
 {
-    "title": "Titulo",
     "home": {
         "tabMenu": {
             "about":"sobre.java",
@@ -9,7 +8,7 @@
         }
     },
     "about": {
-        "picture-caption": "Sexta-feira 5 da tarde depois de um deploy em prod sem testes"
+        "picture-caption": "Sexta-feira 5 da tarde após um deploy em prod sem testes"
     },
     "contact": {
         "title": "Entre em Contato",
@@ -30,5 +29,11 @@
                 "message": "Mensagem inválida (mínimo 10 caracteres)"
             }      
         }
+    },
+    "education": {
+        "title": "Título",
+        "institution": "Instituição",
+        "location": "Localização",
+        "date": "Data"
     }
 }

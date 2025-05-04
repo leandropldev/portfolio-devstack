@@ -29,5 +29,11 @@
                 "message": "Invalid message (minimum 10 characters)"
             }
         }
+    },
+    "education": {
+        "title": "Title",
+        "institution": "Institution",
+        "location": "Location",
+        "date": "Date"
     }
 }

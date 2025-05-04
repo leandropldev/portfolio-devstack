@@ -1,15 +1,12 @@
-<div class="space-y-2 w-full text-wrap text-justify rounded-lg overflow-hidden border-1 border-(--app-border-clr)">
-    <header class="header flex p-2 justify-between items-center bg-(--app-light-grey-bg)">
-        <span class="font-bold text-gray-800 dark:text-white cursor-pointer"
-            (click)="toggleVisibility(card.id)">
-                {{card.type}}
+<div class="space-y-2 w-full text-wrap text-justify rounded-lg overflow-hidden border-1 border-(--app-border-clr) md:max-w-[750px]">
+    <header class="header flex p-2 justify-between items-center bg-(--app-light-grey-bg) cursor-pointer" 
+        (click)="toggleVisibility(card.id)">
+        <span class="font-bold">
+            {{card.type}}
         </span>
-        <span 
-            (click)="toggleVisibility(card.id)"
-            class="cursor-pointer"
-        >
+        <span>
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
                     *ngIf="showContent"
                     class="h-4">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
@@ -20,14 +17,32 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                 </svg>
             </div>
-        </span>    
+        </span>  
     </header>
-    <main *ngIf="showContent" class="content flex flex-col px-4">
-        <span>{{card.title}}</span>
-        <span>{{card.institution}}</span>
-        <span>{{card.location}}</span>
-        <span>{{card.startDate}} - {{card.endDate}}</span>
-        <span>{{card.description}}</span>
-        <span *ngIf="card.certificationLink">certification link</span>
+    <main *ngIf="showContent" class="content flex flex-col px-4 pb-3">
+        <p> 
+            <span class="font-bold">{{ 'education.title' | translate}}: </span>
+            {{card.title}}
+        </p>
+        <p>
+            <span class="font-bold">{{ 'education.institution' | translate}}: </span>
+            {{card.institution}}
+        </p>
+        <p>
+            <span class="font-bold">{{ 'education.location' | translate}}: </span>
+            {{card.location}}
+        </p>
+        <p>
+            <span class="font-bold">{{ 'education.date' | translate}}: </span>
+            {{card.startDate}} - {{card.endDate}}
+        </p>
+        <hr class="my-1 border-0.5 border-(--app-border-clr)" />
+        <p>{{card.description}}</p>
+        <p *ngIf="card.certificationLink">
+            <span>
+                <hr class="my-1 border-0.5 border-(--app-border-clr)" />
+            </span>
+            certification
+        </p>
     </main>
-<div>
+</div>

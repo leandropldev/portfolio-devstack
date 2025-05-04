@@ -1,11 +1,13 @@
 import { Component, EventEmitter, Input, Output } from "@angular/core";
 import { Education } from "../../../../interfaces/education";
 import { CommonModule } from "@angular/common";
+import { TranslateModule } from "@ngx-translate/core";
 
 @Component({
   selector: "app-education-card",
   imports: [
-    CommonModule
+    CommonModule,
+    TranslateModule
   ],
   templateUrl: "./education-card.component.html",
   styleUrls: ["./education-card.component.css"],
