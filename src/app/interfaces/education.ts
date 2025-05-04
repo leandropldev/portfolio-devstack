@@ -1,4 +1,6 @@
 export interface Education {
+    id: number;
+    type: string;
     title: string;
     institution: string;
     location: string;
