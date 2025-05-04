@@ -13,6 +13,21 @@
     {
         "id": 1,
         "type": "Especialization",
+<<<<<<< HEAD
+=======
+        "title": "Bachelor of Science in Computer Science",
+        "institution": "University of Technology",
+        "location": "City, Country",
+        "startDate": "2015-09-01",
+        "endDate": "2019-06-01",
+        "description": "Graduated with honors, specializing in software development and data analysis. Completed a capstone project on machine learning algorithms for predictive analytics.",
+        "certificationLink": ""
+    }
+    ,
+    {
+        "id": 2,
+        "type": "Especialization",
+>>>>>>> ff826ac7825a734aa48bfdb41d77be7ec9cfc5fb
         "title": "Bachelor of Science in Computer Science",
         "institution": "University of Technology",
         "location": "City, Country",
