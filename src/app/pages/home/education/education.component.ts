@@ -21,6 +21,7 @@ export class EducationComponent {
   ) {}
 
   ngOnInit(): void {
+    this.activeCardId = 0;
     this.defineEducationJson(this.translateService.currentLang || 'en');
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
         this.defineEducationJson(event.lang);
