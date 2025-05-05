@@ -2,13 +2,13 @@
     {
         "id": 0,
         "type": "Graduation",
-        "title": "Bachelor of Science in Computer Science",
-        "institution": "University of Technology",
-        "location": "City, Country",
-        "startDate": "2015-09-01",
-        "endDate": "2019-06-01",
-        "description": "Graduated with honors, specializing in software development and data analysis. Completed a capstone project on machine learning algorithms for predictive analytics.",
-        "certificationLink": "https://www.universityoftechnology.edu/certificates/123456"
+        "title": "Systems Analysis and Development",
+        "institution": "Fatec São Caetano do Sul",
+        "location": "São Caetano do Sul, Brasil",
+        "startDate": "2015/09/01",
+        "endDate": "2019/06/01",
+        "description": "Degree in Systems Analysis and Development, with a focus on building and maintaining web applications. Education centered on fullstack development, with a strong foundation in programming logic, system modeling, and software quality practices. Knowledge of agile methodologies, information security, and integration with cloud services such as AWS.",
+        "certificationLink": "https://drive.google.com/file/d/1KYm8xe1G3ZttWyvT_Z89iliBpSZCAjNt/view?usp=drive_link"
     },
     {
         "id": 1,
