@@ -4,17 +4,28 @@
             <ng-container *ngFor="let line of displayedLines; let idx = index">
                 <div [class.pl-6]="lines[idx].type === 'response'" class="whitespace-pre-wrap">
                     <span *ngIf="lines[idx].type === 'command'" class="text-(--app-title-text-clr)"> 
-                        C:\> 
+                        C:\> {{ line }}
                     </span>
-                    {{ line }}
+                    <span *ngIf="lines[idx].type === 'response'">
+                        {{ line }}
+                    </span>
                 </div>
             </ng-container>
             <div *ngIf="isTyping" class="inline-block w-1 h-4 bg-green-400 animate-blink-cursor ml-3"></div>
+            <div *ngIf="!isTyping" class="ml-6">
+                <button class="bg-gray-700 hover:bg-gray-400 text-gray-400 hover:text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                    <a download="LeandroReis_CV" target="_blank" href="../../../../assets/pdf/LeandroReis_CV.pdf" class="flex gap-2">
+                      <svg class="fill-current h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                      <span >Download CV</span> <img src="{{pdfLink}}" class="h-5"/>
+                    </a>
+                </button>
+            </div>
         </div>
+        
     </section>
 
     <section class="basis-2/4 flex justify-center">
-        <figure class="static transition-all duration-300 filter grayscale-0 md:max-w-xl md:grayscale-50 hover:grayscale-0">  
+        <figure class="static transition-all duration-300 filter grayscale-0 md:max-w-xl">  
             <img class="rounded-lg xl:h-full" src="assets/images/picture.jpg" alt="prod deploy jump">
             <figcaption class="relative px-4 text-lg text-white bottom-18 md:bottom-15">
                 <p class="text-center font-bold scale-90 ">{{ 'about.picture-caption' | translate}}</p>

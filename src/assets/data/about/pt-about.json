@@ -42,5 +42,13 @@
     {   
         "type": "response", 
         "text": "Criar soluções eficientes, escaláveis e bem pensadas — do código ao deploy. Gosto de trabalhar com times que valorizam boas práticas, colaboração e aprendizado contínuo. Meu objetivo é sempre crescer como profissional e ajudar os projetos (e as pessoas) ao meu redor a crescerem também." 
+    },
+    {   
+        "type": "response", 
+        "text": " " 
+    },
+    {   
+        "type": "command",  
+        "text": "meu-cv" 
     }
 ]

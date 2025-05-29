@@ -22,6 +22,7 @@ export class AboutComponent implements OnInit, OnDestroy {
   currentLineIndex = 0;
   interval: any;
   isTyping: boolean = true;
+  pdfLink: string = '../assets/images/icons/pdf.png';
 
   constructor(
     @Inject(PLATFORM_ID) private platform: Object,
@@ -59,7 +60,7 @@ export class AboutComponent implements OnInit, OnDestroy {
         this.currentLineIndex++;
         setTimeout(() => this.typeNextLine(), 400);
       }
-    }, 30);
+    }, 10);
   }
 
   private defineAboutJsonFile(lang: string) {

@@ -42,5 +42,13 @@
     {   
         "type": "response", 
         "text": "Create efficient, scalable, and well-thought-out solutions — from code to deployment. I enjoy working with teams that value best practices, collaboration, and continuous learning. My goal is to always grow as a professional and help the projects (and people) around me grow too." 
+    },
+    {   
+        "type": "response", 
+        "text": " " 
+    },
+    {   
+        "type": "command",  
+        "text": "my-cv" 
     }
 ]

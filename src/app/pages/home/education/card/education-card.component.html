@@ -1,7 +1,7 @@
 <div class=" w-full text-wrap rounded-lg overflow-hidden border-1 border-(--app-border-clr) md:max-w-[750px]">
     <header class="header flex p-2 justify-between items-center bg-(--app-light-grey-bg) cursor-pointer" 
         (click)="toggleVisibility(card.id)">
-        <span class="font-bold">
+        <span class="text-xl text-(--app-title-text-clr) font-semibold">
            {{card.type}}
         </span>
         <span>
@@ -20,26 +20,26 @@
         </span>  
     </header>
     <main  
-        class="content flex flex-col px-4 py-3 text-sm animate-fade
+        class="content flex flex-col px-4 py-3 animate-fade
             {{!showContent  ? 'hidden' : ''}}">
         <p> 
-            <span class="font-bold">{{ 'education.title' | translate}}: </span>
+            <span class="font-bold text-(--app-sub-title-text-clr)">{{ 'education.title' | translate}}: </span>
             {{card.title}}
         </p>
         <p>
-            <span class="font-bold">{{ 'education.institution' | translate}}: </span>
+            <span class="font-bold text-(--app-sub-title-text-clr)">{{ 'education.institution' | translate}}: </span>
             {{card.institution}}
         </p>
         <p>
-            <span class="font-bold">{{ 'education.location' | translate}}: </span>
+            <span class="font-bold text-(--app-sub-title-text-clr)">{{ 'education.location' | translate}}: </span>
             {{card.location}}
         </p>
         <p>
-            <span class="font-bold">{{ 'education.date' | translate}}: </span>
+            <span class="font-bold text-(--app-sub-title-text-clr)">{{ 'education.date' | translate}}: </span>
             {{card.startDate}} - {{card.endDate}}
         </p>
         <hr class="my-1 border-0.5 border-(--app-border-clr)" />
-        <p>{{card.description}}</p>
+        <p class="px-2">{{card.description}}</p>
         <p *ngIf="card.certificationLink">
             <span>
                 <hr class="my-1 border-0.5 border-(--app-border-clr)" />

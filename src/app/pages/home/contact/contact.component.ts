@@ -20,7 +20,7 @@ export class ContactComponent {
   contactForm: FormGroup;
   formMessage: string = '';
   imageUrl: string = '../assets/images/icons/';
-
+  pdfLink: string = '../assets/images/icons/pdf.png';
   contactMeLinks: ContactMeLinks[] = [
     {
       name: 'LinkedIn',
