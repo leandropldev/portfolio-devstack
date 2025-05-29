@@ -22,7 +22,6 @@ export class AboutComponent implements OnInit, OnDestroy {
   currentLineIndex = 0;
   interval: any;
   isTyping: boolean = true;
-  pdfLink: string = '../assets/images/icons/pdf.png';
 
   constructor(
     @Inject(PLATFORM_ID) private platform: Object,
