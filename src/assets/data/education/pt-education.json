@@ -5,31 +5,20 @@
         "title": "Análise e Desenvolvimento de Sistemas",
         "institution": "Fatec São Caetano do Sul",
         "location": "São Caetano do Sul, Brasil",
-        "startDate": "2015/09/01",
-        "endDate": "2019/06/01",
+        "startDate": "01/09/20215",
+        "endDate": "01/06/2019",
         "description": "Graduação em Análise e Desenvolvimento de Sistemas, com ênfase na construção e manutenção de aplicações web. Formação voltada ao desenvolvimento fullstack, com base sólida em lógica de programação, modelagem de sistemas e práticas de qualidade de software. Conhecimento em metodologias ágeis, segurança da informação e integração com serviços em nuvem, como AWS.",
         "certificationLink": "https://drive.google.com/file/d/1KYm8xe1G3ZttWyvT_Z89iliBpSZCAjNt/view?usp=drive_link"
     },
     {
         "id": 1,
         "type": "Especialização",
-        "title": "Bachelor of Science in Computer Science",
-        "institution": "University of Technology",
-        "location": "City, Country",
-        "startDate": "2015-09-01",
-        "endDate": "2019-06-01",
-        "description": "Graduated with honors, specializing in software development and data analysis. Completed a capstone project on machine learning algorithms for predictive analytics.",
-        "certificationLink": "https://www.universityoftechnology.edu/certificates/123456"
-    },
-    {
-        "id": 2,
-        "type": "Especialização",
-        "title": "Bachelor of Science in Computer Science",
-        "institution": "University of Technology",
-        "location": "City, Country",
-        "startDate": "2015-09-01",
-        "endDate": "2019-06-01",
-        "description": "Graduated with honors, specializing in software development and data analysis. Completed a capstone project on machine learning algorithms for predictive analytics.",
-        "certificationLink": "https://www.universityoftechnology.edu/certificates/123456"
+        "title": "Apache Kafka and Spring Boot (Consumer, Producer)",
+        "institution": "Udemy",
+        "location": "",
+        "startDate": "",
+        "endDate": "06/2019",
+        "description": "Neste curso, você aprenderá a consumir a partir de um tópico do Apache Kafka e a partir dele usando uma aplicação Spring Boot simples. Este curso não é para todos, pois você precisa de experiência básica com Maven, Spring Boot e Apache Kafka. Este curso se concentra exclusivamente na prática, portanto, os conceitos do Spring Framework ou do Apache Kafka não serão explicados em detalhes, mas sim um pequeno projeto simples que será construído.",
+        "certificationLink": "udemy-apache-kafka.jpg"
     }
 ]

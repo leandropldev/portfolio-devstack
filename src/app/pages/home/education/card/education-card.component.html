@@ -23,23 +23,23 @@
         class="content flex flex-col px-4 py-3 animate-fade min-w-0
             {{!showContent  ? 'hidden' : ''}}">
         <p> 
-            <span class="font-bold text-(--app-sub-title-text-clr)">{{ 'education.title' | translate}}: </span>
+            <span *ngIf="card.title" class="font-bold text-(--app-sub-title-text-clr)">{{ 'education.title' | translate}}: </span>
             {{card.title}}
         </p>
         <p>
-            <span class="font-bold text-(--app-sub-title-text-clr)">{{ 'education.institution' | translate}}: </span>
+            <span *ngIf="card.institution" class="font-bold text-(--app-sub-title-text-clr)">{{ 'education.institution' | translate}}: </span>
             {{card.institution}}
         </p>
         <p>
-            <span class="font-bold text-(--app-sub-title-text-clr)">{{ 'education.location' | translate}}: </span>
+            <span *ngIf="card.location" class="font-bold text-(--app-sub-title-text-clr)">{{ 'education.location' | translate}}: </span>
             {{card.location}}
         </p>
         <p>
-            <span class="font-bold text-(--app-sub-title-text-clr)">{{ 'education.date' | translate}}: </span>
-            {{card.startDate}} - {{card.endDate}}
+            <span *ngIf="card.startDate || card.endDate" class="font-bold text-(--app-sub-title-text-clr)">{{ 'education.date' | translate}}: </span>
+            {{card.startDate}} <span *ngIf="card.startDate"> - </span> {{card.endDate}}
         </p>
         <hr class="my-1 border-0.5 border-(--app-border-clr)" />
-        <p class="px-2 text-overflow min-w-0">{{card.description}}</p>
+        <p *ngIf="card.certificationLink" class="px-2 text-overflow min-w-0">{{card.description}}</p>
         <p *ngIf="card.certificationLink">
             <span>
                 <hr class="my-1 border-0.5 border-(--app-border-clr)" />

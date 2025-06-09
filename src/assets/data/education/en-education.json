@@ -13,22 +13,12 @@
     {
         "id": 1,
         "type": "Especialization",
-        "title": "Bachelor of Science in Computer Science",
-        "institution": "University of Technology",
-        "location": "City, Country",
-        "startDate": "2015-09-01",
-        "endDate": "2019-06-01",
-        "description": "Graduated with honors, specializing in software development and data analysis. Completed a capstone project on machine learning algorithms for predictive analytics.",
-        "certificationLink": ""
-    },
-    {
-        "id": 2,
-        "type": "Especialization",
-        "title": "Bachelor of Science in Computer Science",
-        "institution": "University of Technology",
-        "location": "City, Country",
-        "startDate": "2015-09-01",
-        "endDate": "2019-06-01",
-        "description": "Graduated with honors, specializing in software development and data analysis. Completed a capstone project on machine learning algorithms for predictive analytics."
+        "title": "Apache Kafka and Spring Boot (Consumer, Producer)",
+        "institution": "Udemy",
+        "location": "",
+        "startDate": "",
+        "endDate": "2019/06",
+        "description": "In this course, you are going to learn how to consume from an Apache Kafka topic and consume from it using a simple Spring Boot Application. This course is not for everyone, as you need basic experience with Maven, Spring Boot and Apache Kafka. This course focuses solely on practicality, thus concepts of Spring Framework or Apache Kafka will not be explained in detail, but instead a small simple project will be built.",
+        "certificationLink": "udemy-apache-kafka.jpg"
     }
 ]
