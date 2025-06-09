@@ -1,4 +1,4 @@
-<div class=" w-full text-wrap rounded-lg overflow-hidden border-1 border-(--app-border-clr) md:max-w-[750px]">
+<div class="rounded-lg overflow-hidden border-1 border-(--app-border-clr) w-full md:max-w-[750px] md:min-w-[750px]">
     <header class="header flex p-2 justify-between items-center bg-(--app-light-grey-bg) cursor-pointer" 
         (click)="toggleVisibility(card.id)">
         <span class="text-xl text-(--app-title-text-clr) font-semibold">
@@ -20,7 +20,7 @@
         </span>  
     </header>
     <main  
-        class="content flex flex-col px-4 py-3 animate-fade
+        class="content flex flex-col px-4 py-3 animate-fade min-w-0
             {{!showContent  ? 'hidden' : ''}}">
         <p> 
             <span class="font-bold text-(--app-sub-title-text-clr)">{{ 'education.title' | translate}}: </span>
@@ -39,12 +39,12 @@
             {{card.startDate}} - {{card.endDate}}
         </p>
         <hr class="my-1 border-0.5 border-(--app-border-clr)" />
-        <p class="px-2">{{card.description}}</p>
+        <p class="px-2 text-overflow min-w-0">{{card.description}}</p>
         <p *ngIf="card.certificationLink">
             <span>
                 <hr class="my-1 border-0.5 border-(--app-border-clr)" />
             </span>
-            <a href="{{card.certificationLink}}" target="_blank" class="hover:underline flex items-center">
+            <a href="{{certificationFolder + card.certificationLink}}" target="_blank" class="hover:underline flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m18.375 12.739-7.693 7.693a4.5 4.5 0 0 1-6.364-6.364l10.94-10.94A3 3 0 1 1 19.5 7.372L8.552 18.32m.009-.01-.01.01m5.699-9.941-7.81 7.81a1.5 1.5 0 0 0 2.112 2.13" />
                 </svg>

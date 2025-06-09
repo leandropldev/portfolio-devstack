@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { LangChangeEvent, TranslateService } from "@ngx-translate/core";
 import { Education } from '../../../interfaces/education';
 
@@ -14,14 +14,14 @@ import { EducationCardComponent } from "./card/education-card.componet";
 })
 export class EducationComponent {
   educationCards: Education[] = [];
-  activeCardId: number = 0;
+  activeCardId: number = -1;
 
   constructor(
     private translateService: TranslateService,
   ) {}
 
   ngOnInit(): void {
-    this.activeCardId = 0;
+    this.activeCardId = -1;
     this.defineEducationJson(this.translateService.currentLang || 'en');
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
         this.defineEducationJson(event.lang);
@@ -29,6 +29,10 @@ export class EducationComponent {
   }
 
   onActiveCardChange(cardId: number) {
+    if (this.activeCardId === cardId) {
+      this.activeCardId = -1;
+      return;
+    } 
     this.activeCardId = cardId;
   }   
 

@@ -17,6 +17,8 @@ export class EducationCardComponent {
   @Input() showContent: boolean = false;
   @Output() activeCard = new EventEmitter<number>();
 
+  certificationFolder: string = 'assets/data/education/certificate/';
+
   toggleVisibility(cardId : number) {
     this.activeCard.emit(cardId);
   }
