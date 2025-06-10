@@ -3,6 +3,7 @@ import { AboutComponent } from './pages/home/about/about.component';
 import { ContactComponent } from './pages/home/contact/contact.component';
 import { CareerComponent } from './pages/home/career/career.component';
 import { EducationComponent } from './pages/home/education/education.component';
+import { PortifolioComponent } from './pages/home/portifolio/portifolio.component';
 
 export const routes: Routes = [
     {
@@ -25,5 +26,9 @@ export const routes: Routes = [
     {
         path: 'education',
         component: EducationComponent
+    },
+    {
+        path: 'portfolio',
+        component: PortifolioComponent
     }
 ];

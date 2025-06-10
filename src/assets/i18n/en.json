@@ -4,7 +4,8 @@
             "about":"about.java",
             "career": "career.css",
             "education": "education.ts",
-            "contact": "contact.tf"
+            "contact": "contact.tf",
+            "portfolio": "portfolio.py"
         }
     },
     "about": {

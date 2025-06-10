@@ -12,6 +12,10 @@
         "link": "education"
     },
     {
+        "langKeyMenu": "home.tabMenu.portfolio",
+        "link": "portfolio"
+    },
+    {
         "langKeyMenu": "home.tabMenu.contact",
         "link": "contact"
     }
