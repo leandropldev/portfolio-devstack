@@ -13,8 +13,11 @@ import { PortifolioModalComponent } from "./portifolio-modal/portifolio-modal.co
   styleUrl: './portifolio.component.css'
 })
 export class PortifolioComponent {
-  portfolioCards: Portfolio[] = [];
-  translateService = inject(TranslateService);
+  portfolioList: Portfolio[] = [];
+  portfolioModal: Portfolio = {} as Portfolio;
+  isDisplayModal: boolean = false;
+
+  translateService = inject(TranslateService);  
 
   ngOnInit(): void {
     this.definePortfolioJson(this.translateService.currentLang || 'en');
@@ -24,6 +27,23 @@ export class PortifolioComponent {
   }
 
   private definePortfolioJson(lang: string) {
-    this.portfolioCards = lang === 'en' ? portfolioEnData : portfolioPtData;
+    this.portfolioList = lang === 'en' ? portfolioEnData : portfolioPtData;
   } 
+
+  displayModal(portfolio: Portfolio): void {
+    this.isDisplayModal = true;
+    this.portfolioModal = portfolio;
+  }
+
+  closeModal(): void {
+    this.isDisplayModal = false;
+    this.portfolioModal = {} as Portfolio;
+  }
+
+  closeModalFromOutside(event: MouseEvent): void {
+    const targetElement = event.target as HTMLElement;
+    if (targetElement.classList.contains('fixed')) {
+      this.closeModal();
+    }
+  }
 }

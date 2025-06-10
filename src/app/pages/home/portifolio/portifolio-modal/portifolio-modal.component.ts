@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Portfolio } from '../../../../interfaces/portfolio';
 
 @Component({
   selector: 'app-portifolio-modal',
@@ -7,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './portifolio-modal.component.css'
 })
 export class PortifolioModalComponent {
+  @Input() portfolio!: Portfolio;
+  @Output() activeModal = new EventEmitter<boolean>();
 
+  closeModal(): void {
+    this.activeModal.emit(false);
+  }
 }

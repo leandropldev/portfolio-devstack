@@ -1,3 +1,12 @@
-<div class="relative bg-(--app-light-grey-bg) p-4 w-2xl rounded-lg shadow-lg">
-    <h2>Title</h2>    
-</div>
+<div class="relative bg-(--app-light-grey-bg) p-4 w-screen md:w-2xl rounded-lg shadow-lg border-1 border-(--app-border-clr)">
+    <h2>Project name: {{portfolio.name}}</h2>   
+    
+    <button 
+        class="absolute top-4 right-4 cursor-pointer"
+        (click)="closeModal()"
+    >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+    </button>
+</div>  
