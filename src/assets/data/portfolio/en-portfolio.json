@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "name": "gericht",
+        "type": "frontend",
+        "description": "A beautiful restaurant land page with a modern and responsive design.",
+        "technologies": ["JavaScript", "React", "CSS"],
+        "link": "https://restaurant-two-mu.vercel.app/",
+        "github": "https://github.com/leandropldev/restaurant",
+        "image": "gericht.png"
+    },
+    {
+        "id": 1,
+        "name": "Article Summarizer",
+        "type": "frontend",
+        "description": "A web application that summarizes articles using OpenAI GPT-4.",
+        "technologies": ["React", "Tailwind", "Redux"],
+        "link": "https://summarizer-api.vercel.app/",
+        "github": "https://github.com/leandropldev/summarizer-api",
+        "image": "summarizer.png"
+    },
+    {
+        "id": 2,
+        "name": "Todos",
+        "type": "frontend",
+        "description": "A web application that manages your ToDo`s.",
+        "technologies": ["Angular", "CSS", "Signals"],
+        "link": "https://todo-ui-sable.vercel.app/",
+        "github": "https://github.com/leandropldev/todo-ui",
+        "image": "todos.png"
+    } 
+]
