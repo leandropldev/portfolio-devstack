@@ -6,4 +6,5 @@ export interface Portfolio {
     technologies: string[];
     link?: string;
     github?: string;
+    image?: string;
 }

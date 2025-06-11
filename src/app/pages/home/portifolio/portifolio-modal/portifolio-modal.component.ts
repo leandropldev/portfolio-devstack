@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 export class PortifolioModalComponent {
   @Input() portfolio!: Portfolio;
   @Output() closeModal = new EventEmitter<void>();
+  portfolioImgFolder: string = 'assets/images/portfolio/';
 
   closeModalEmitter(): void {
     this.closeModal.emit();
