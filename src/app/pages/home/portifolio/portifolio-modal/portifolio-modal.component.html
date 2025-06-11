@@ -1,12 +1,43 @@
-<div class="relative bg-(--app-light-grey-bg) p-4 w-screen md:w-2xl rounded-lg shadow-lg border-1 border-(--app-border-clr)">
-    <h2>Project name: {{portfolio.name}}</h2>   
-    
+<div class="relative bg-(--app-light-grey-bg) md:top-20 p-4 w-screen md:w-2xl rounded-lg shadow-lg border-1 border-(--app-border-clr)">
     <button 
         class="absolute top-4 right-4 cursor-pointer"
-        (click)="closeModal()"
+        (click)="closeModalEmitter()"
     >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
         </svg>
     </button>
+
+    <h2>Project name: {{portfolio.name}}</h2>
+    <p>{{portfolio.type}}</p>
+
+    <div class="flex justify-normal flex-wrap gap-0.5">
+        @for(tech of portfolio.technologies; track $index){
+            <div class="bg-(--app-border-clr) rounded-xl px-1">
+                {{tech}}
+            </div>
+        }  
+    </div>
+
+    <hr class="my-2 border-0.5 border-(--app-border-clr)" /> 
+    <p class="px-4">{{portfolio.description}}</p>
+    <hr class="my-2 border-0.5 border-(--app-border-clr)" /> 
+    <div *ngIf="portfolio.link || portfolio.github">
+        <h3 class="text-lg">Links</h3>
+        <div class="flex flex-col gap-2 pl-2">
+            <a *ngIf="portfolio.link" href="{{portfolio.link}}" target="_blank" class="hover:underline flex gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m18.375 12.739-7.693 7.693a4.5 4.5 0 0 1-6.364-6.364l10.94-10.94A3 3 0 1 1 19.5 7.372L8.552 18.32m.009-.01-.01.01m5.699-9.941-7.81 7.81a1.5 1.5 0 0 0 2.112 2.13" />
+                </svg>
+                Website
+            </a>
+            <a *ngIf="portfolio.github" href="{{portfolio.github}}" target="_blank" class="hover:underline flex gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m18.375 12.739-7.693 7.693a4.5 4.5 0 0 1-6.364-6.364l10.94-10.94A3 3 0 1 1 19.5 7.372L8.552 18.32m.009-.01-.01.01m5.699-9.941-7.81 7.81a1.5 1.5 0 0 0 2.112 2.13" />
+                </svg>
+                Github
+            </a>
+        </div>
+    </div>
+    
 </div>  
