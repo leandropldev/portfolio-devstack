@@ -3,8 +3,8 @@
         "id": 0,
         "name": "gericht",
         "type": "frontend",
-        "description": "A beautiful restaurant land page with a modern and responsive design.",
-        "technologies": ["JavaScript", "React", "CSS"],
+        "description": "Linda página inicial de um restaurante com um moderno e responsivo design.",
+        "technologies": ["React", "CSS"],
         "link": "https://restaurant-two-mu.vercel.app/",
         "github": "https://github.com/leandropldev/restaurant",
         "image": "gericht.png"
@@ -13,8 +13,8 @@
         "id": 1,
         "name": "Article Summarizer",
         "type": "frontend",
-        "description": "A web application that summarizes articles using OpenAI GPT-4.",
-        "technologies": ["React", "Tailwind", "Redux"],
+        "description": "Uma Aplicação Web que resume artigos usando OpenAI GPT-4.",
+        "technologies": ["React", "Tailwind", "Redux", "OpenAI"],
         "link": "https://summarizer-api.vercel.app/",
         "github": "https://github.com/leandropldev/summarizer-api",
         "image": "summarizer.png"
@@ -23,10 +23,20 @@
         "id": 2,
         "name": "Todos",
         "type": "frontend",
-        "description": "A web application that manages your ToDo`s.",
+        "description": "Uma aplicação web que gerencia suas tarefas.",
         "technologies": ["Angular", "CSS", "Signals"],
         "link": "https://todo-ui-sable.vercel.app/",
         "github": "https://github.com/leandropldev/todo-ui",
         "image": "todos.png"
-    } 
+    },
+    {
+        "id": 3,
+        "name": "Gerenciador de Beans Dinâmicos",
+        "type": "backend",
+        "description": "Uma api que simula pagamentos. Ela mostra como gerenciar beans dinâmicos com Spring boot.",
+        "technologies": ["Java", "Spring boot"],
+        "link": "",
+        "github": "https://github.com/leandropldev/dynamic-bean-manager",
+        "image": "spring-boot.png"
+    }  
 ]

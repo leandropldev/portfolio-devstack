@@ -4,7 +4,7 @@
         "name": "gericht",
         "type": "frontend",
         "description": "A beautiful restaurant land page with a modern and responsive design.",
-        "technologies": ["JavaScript", "React", "CSS"],
+        "technologies": ["React", "CSS"],
         "link": "https://restaurant-two-mu.vercel.app/",
         "github": "https://github.com/leandropldev/restaurant",
         "image": "gericht.png"
@@ -14,7 +14,7 @@
         "name": "Article Summarizer",
         "type": "frontend",
         "description": "A web application that summarizes articles using OpenAI GPT-4.",
-        "technologies": ["React", "Tailwind", "Redux"],
+        "technologies": ["React", "Tailwind", "Redux", "OpenAI"],	
         "link": "https://summarizer-api.vercel.app/",
         "github": "https://github.com/leandropldev/summarizer-api",
         "image": "summarizer.png"
@@ -28,5 +28,15 @@
         "link": "https://todo-ui-sable.vercel.app/",
         "github": "https://github.com/leandropldev/todo-ui",
         "image": "todos.png"
+    },
+    {
+        "id": 3,
+        "name": "Dynamic Bean Manager",
+        "type": "backend",
+        "description": "A mock Payment api. It showcases how to manage dinamic beans with spring boot.",
+        "technologies": ["Java", "Spring boot"],
+        "link": "",
+        "github": "https://github.com/leandropldev/dynamic-bean-manager",
+        "image": "spring-boot.png"
     } 
 ]

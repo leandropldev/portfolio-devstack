@@ -1,15 +1,29 @@
 <div class="relative bg-(--app-light-grey-bg) md:top-20 p-4 w-screen md:w-2xl rounded-lg shadow-lg border-1 border-(--app-border-clr) text-center cursor-default">
     <button 
-        class="absolute top-4 right-4 cursor-pointer"
+        class="absolute top-2 right-2 cursor-pointer"
         (click)="closeModalEmitter()"
     >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
         </svg>
     </button>   
-    <header class="flex flex-col space-y-2 items-center mb-4">
+    <header class="flex flex-col space-y-2 items-center my-4">
         <h2 class="tracking-widest uppercase text-2xl text-(--app-sub-title-text-clr) font-extrabold">{{portfolio.name}}</h2>
-        <p class="uppercase text-(--app-title-text-clr)">{{portfolio.type}}</p>
+        
+        <div *ngIf="portfolio.type === 'frontend'" class="flex items-center space-x-1.5 text-(--app-title-text-clr)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" class="size-5" fill="currentColor">
+                <path d="M 5 2 C 3.355469 2 2 3.355469 2 5 L 2 35 C 2 36.644531 3.355469 38 5 38 L 19 38 L 19 40 L 10 40 C 9.96875 40 9.9375 40 9.90625 40 C 9.636719 40.027344 9.386719 40.160156 9.21875 40.375 L 4.21875 46.375 C 3.976563 46.675781 3.929688 47.085938 4.097656 47.433594 C 4.265625 47.78125 4.617188 48 5 48 L 45 48 C 45.382813 48 45.734375 47.78125 45.902344 47.433594 C 46.070313 47.085938 46.023438 46.675781 45.78125 46.375 L 40.78125 40.375 C 40.589844 40.136719 40.304688 40 40 40 L 31 40 L 31 38 L 45 38 C 46.644531 38 48 36.644531 48 35 L 48 5 C 48 3.355469 46.644531 2 45 2 Z M 5 4 L 45 4 C 45.554688 4 46 4.445313 46 5 L 46 35 C 46 35.554688 45.554688 36 45 36 L 5 36 C 4.445313 36 4 35.554688 4 35 L 4 5 C 4 4.445313 4.445313 4 5 4 Z M 6 6 L 6 34 L 44 34 L 44 6 Z M 8 8 L 42 8 L 42 32 L 8 32 Z M 19.28125 11.28125 L 11.28125 19.28125 L 10.59375 20 L 11.28125 20.71875 L 19.28125 28.71875 L 20.71875 27.28125 L 13.4375 20 L 20.71875 12.71875 Z M 30.71875 11.28125 L 29.28125 12.71875 L 36.5625 20 L 29.28125 27.28125 L 30.71875 28.71875 L 38.71875 20.71875 L 39.40625 20 L 38.71875 19.28125 Z M 21 38 L 29 38 L 29 42 L 21 42 Z M 10.46875 42 L 19 42 L 19 44 L 31 44 L 31 42 L 39.53125 42 L 42.875 46 L 7.125 46 Z"></path>
+            </svg>
+            <p class="uppercase ">{{portfolio.type}}</p>
+        </div>
+        <div *ngIf="portfolio.type === 'backend'" class="flex items-center space-x-1.5 text-(--app-title-text-clr)">
+            <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-gear size-5" viewBox="0 0 16 16">
+                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+            </svg>            
+            <p class="uppercase ">{{portfolio.type}}</p>
+        </div>
+
         <div class="flex justify-center flex-wrap gap-1">
             @for(tech of portfolio.technologies; track $index){
                 <div class="bg-(--app-border-clr) rounded-xl px-1">
@@ -17,9 +31,9 @@
                 </div>
             }  
         </div>
-        <a href="{{portfolio.link}}" target="_blank">
+        <a *ngIf="portfolio.link" href="{{portfolio.link}}" target="_blank">
             <img *ngIf="portfolio.image" 
-                class="rounded-lg md:w-md" 
+                class="rounded-lg max-h-[300px]" 
                 src="{{portfolioImgFolder + portfolio.image}}" 
                 alt="{{portfolio.name}}" 
             />
