@@ -31,13 +31,12 @@
                 </div>
             }  
         </div>
-        <a *ngIf="portfolio.link" href="{{portfolio.link}}" target="_blank">
-            <img *ngIf="portfolio.image" 
-                class="rounded-lg max-h-[300px]" 
-                src="{{portfolioImgFolder + portfolio.image}}" 
-                alt="{{portfolio.name}}" 
-            />
-        </a>
+        <img *ngIf="portfolio.image" 
+            class="rounded-lg max-h-[300px]" 
+            src="{{portfolioImgFolder + portfolio.image}}" 
+            alt="{{portfolio.name}}" 
+        />
+        
     </header>
     <main>
         <hr class="my-2 border-0.5 border-(--app-border-clr)" /> 
