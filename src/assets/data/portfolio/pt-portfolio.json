@@ -38,5 +38,15 @@
         "link": "",
         "github": "https://github.com/leandropldev/dynamic-bean-manager",
         "image": "spring-boot.png"
-    }  
+    },
+    {
+        "id": 4,
+        "name": "Processamento de Lotes com Multithreading",
+        "type": "backend",
+        "description": "Uma api que simula produtos. 1000 registros para serem atualizados. Qual é a melhor forma de fazer isso? Este projeto mostra como usar multithreading para processar uma quantidade dinâmica de lotes de dados.",
+        "technologies": ["Java", "Spring boot", "H2", "Multi-threading", "Batch Processing"],
+        "link": "",
+        "github": "https://github.com/leandropldev/multithreadingBatchProcessor",
+        "image": "spring-boot.png"
+    } 
 ]

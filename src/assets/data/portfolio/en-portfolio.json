@@ -38,5 +38,15 @@
         "link": "",
         "github": "https://github.com/leandropldev/dynamic-bean-manager",
         "image": "spring-boot.png"
+    },
+    {
+        "id": 4,
+        "name": "Multithreading Batch Processing",
+        "type": "backend",
+        "description": "A mock Product api. 1000 records to be updated. What is the best way to do it? This project shows how to use multithreading to process dynamic amount batchs of data.",
+        "technologies": ["Java", "Spring boot", "H2", "Multi-threading", "Batch Processing"],
+        "link": "",
+        "github": "https://github.com/leandropldev/multithreadingBatchProcessor",
+        "image": "spring-boot.png"
     } 
 ]
