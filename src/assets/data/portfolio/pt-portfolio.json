@@ -33,7 +33,7 @@
         "id": 3,
         "name": "Gerenciador de Beans Dinâmicos",
         "type": "backend",
-        "description": "Uma api que simula pagamentos. Ela mostra como gerenciar beans dinâmicos com Spring boot.",
+        "description": "Uma api que simula diversos tipos de pagamentos. Como implementar isso de forma dinâmica? Este projeto mostra como Spring boot tem uma solução simples de implementar com o gerenciamento de beans dinâmicos!",
         "technologies": ["Java", "Spring boot"],
         "link": "",
         "github": "https://github.com/leandropldev/dynamic-bean-manager",

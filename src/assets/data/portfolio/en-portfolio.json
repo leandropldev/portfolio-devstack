@@ -33,7 +33,7 @@
         "id": 3,
         "name": "Dynamic Bean Manager",
         "type": "backend",
-        "description": "A mock Payment api. It showcases how to manage dinamic beans with spring boot.",
+        "description": "An API that simulates various types of payments. How to implement this dynamically? This project shows how Spring Boot has a simple solution for dynamic bean management!",
         "technologies": ["Java", "Spring boot"],
         "link": "",
         "github": "https://github.com/leandropldev/dynamic-bean-manager",
