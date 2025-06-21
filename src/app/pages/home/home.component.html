@@ -11,13 +11,13 @@
                     md:py-1.5 md:px-5 md:border-r-1 md:border-l-0 md:border-y-0 cursor-pointer 
                     hover:font-bold hover:bg-(--app-dark-grey-bg)"
                     routerLink="{{menu.link}}"
-                    routerLinkActive="bg-(--app-dark-grey-bg) font-bold"
+                    routerLinkActive="bg-(--app-dark-grey-bg) font-bold md:border-b-2 md:border-(--app-border-clr)"
                 >
                     {{menu.langKeyMenu | translate}}
                 </span>
             }
         </nav>
-        <div class="cursor-auto">
+        <div class="bg-(--app-dark-grey-bg)">
             <router-outlet></router-outlet>
         </div>
     </main>

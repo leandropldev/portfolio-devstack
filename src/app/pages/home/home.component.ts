@@ -19,6 +19,5 @@ import { HeaderComponent } from "../header/header.component";
 })
 export class HomeComponent {
   tabMenus: TabMenus[] = menuTabData;
-  year: any = new Date().getFullYear();
-
+  year: number = new Date().getFullYear();
 }
