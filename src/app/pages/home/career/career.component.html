@@ -1,5 +1,5 @@
-<section class="relative mx-auto px-2 pt-4">
-    <div class="absolute w-1 h-full bg-(--app-border-clr) inset-0 -left-[6px] rounded-md animate-stretch-timeline
+<section class="relative mx-auto px-2 pt-4 bg-(--app-dark-grey-bg) h-[calc(100%+10px)]">
+    <div class="absolute w-1 mt-1 max-h-[calc(100%-10px)] bg-(--app-border-clr) inset-0 left-[10px] rounded-md animate-stretch-timeline
         md:mx-auto md:right-0 md:left-0 md:w-1.5"
     ></div>
     <section class="relative flex flex-col space-y-4 inset-0">
@@ -10,7 +10,7 @@
                 <div
                     aria-hidden="true"
                     class="absolute top-4 inset-0 h-4 w-4 bg-(--app-border-clr) transform rotate-45
-                        md:h-20 md:w-20 md:top-8
+                        md:h-20 md:w-20 md:top-8 left-4
                         {{ $index % 2 === 0 ? 
                             'md:left-[55%]' 
                                 : 'md:left-auto md:right-[56%]'}}"
@@ -18,11 +18,11 @@
                 ></div>
                 <div
                     aria-hidden="true"
-                    class="absolute top-4 -left-5 inset-0 h-4 w-4 bg-(--app-border-clr) rounded-full
+                    class="absolute top-4 -left-1 inset-0 h-4 w-4 bg-(--app-border-clr) rounded-full
                         md:mx-auto md:right-0 md:left-0 md:h-8 md:w-8 md:top-14"
                 ></div>
                 <app-card
-                    class="relative pt-2 inset-0 left-2 z-10
+                    class="relative pt-2 inset-0 left-6 z-10 
                         {{ $index % 2 === 0 ? 
                             'md:left-[55%]'
                                 : 'md:left-[4%]'}}"

@@ -1,19 +1,29 @@
-<div class="border-1 border-(--app-border-clr) m-4 rounded-md overflow-hidden ">
-    <nav class="flex flex-wrap bg-(--app-light-grey-bg) border-b-1 border-(--app-border-clr) 
-        md:flex">
-        @for(menu of tabMenus; track $index){
-            <span 
-                class="border-1 border-(--app-border-clr) px-2
-                md:py-1.5 md:px-5 md:border-r-1 md:border-l-0 md:border-y-0 cursor-pointer 
-                hover:font-bold hover:bg-(--app-dark-grey-bg)"
-                routerLink="{{menu.link}}"
-                routerLinkActive="bg-(--app-dark-grey-bg) font-bold"
-            >
-                {{menu.langKeyMenu | translate}}
-            </span>
-        }
-    </nav>
-    <div class="bg-(--app-dark-grey-bg) p-4 animate-fade">
-        <router-outlet></router-outlet>
-    </div>
+<div class="flex flex-col">
+    
+    <app-header></app-header>
+    
+    <main class="border-1 border-(--app-border-clr) rounded-md m-4 overflow-hidden">
+        <nav class="flex flex-wrap bg-(--app-light-grey-bg) border-b-1 border-(--app-border-clr)
+            md:flex">
+            @for(menu of tabMenus; track $index){
+                <span 
+                    class="border-1 border-(--app-border-clr) px-2
+                    md:py-1.5 md:px-5 md:border-r-1 md:border-l-0 md:border-y-0 cursor-pointer 
+                    hover:font-bold hover:bg-(--app-dark-grey-bg)"
+                    routerLink="{{menu.link}}"
+                    routerLinkActive="bg-(--app-dark-grey-bg) font-bold"
+                >
+                    {{menu.langKeyMenu | translate}}
+                </span>
+            }
+        </nav>
+        <div>
+            <router-outlet></router-outlet>
+        </div>
+    </main>
+    <footer class="flex justify-center items-center text-center">
+        <p class="text-lg">
+            Copyright - {{year}} &copy; Leandro Reis
+        </p>
+    </footer>
 </div>
