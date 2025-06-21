@@ -21,13 +21,23 @@
     }
   }
 
+  --animate-stretch-timeline-md: stretch-timeline-md 5s linear forwards;
+  @keyframes stretch-timeline-md {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: calc(100vh + 970px);
+    }
+  }
+
   --animate-stretch-timeline: stretch-timeline 5s linear forwards;
   @keyframes stretch-timeline {
     0% {
       height: 0;
     }
     100% {
-      height: 100%;
+      height: calc(100svh * 3);
     }
   }
 
