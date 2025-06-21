@@ -2,7 +2,7 @@
     
     <app-header></app-header>
     
-    <main class="border-1 border-(--app-border-clr) rounded-md m-4 overflow-hidden">
+    <main class="border-1 border-(--app-border-clr) rounded-t-md mx-4 mt-4 overflow-hidden">
         <nav class="flex flex-wrap bg-(--app-light-grey-bg) border-b-1 border-(--app-border-clr)
             md:flex">
             @for(menu of tabMenus; track $index){
@@ -17,11 +17,11 @@
                 </span>
             }
         </nav>
-        <div>
+        <div class="cursor-auto">
             <router-outlet></router-outlet>
         </div>
     </main>
-    <footer class="flex justify-center items-center text-center">
+    <footer class="flex justify-center items-center text-center border-x-1 border-b-1 border-(--app-border-clr) rounded-b-md mx-4 h-7">
         <p class="text-lg">
             Copyright - {{year}} &copy; Leandro Reis
         </p>

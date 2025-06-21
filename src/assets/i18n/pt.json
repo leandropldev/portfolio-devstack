@@ -1,11 +1,11 @@
 {
     "home": {
         "tabMenu": {
-            "about":"sobre.java",
+            "about":"sobre.sh",
             "career": "carreira.css",
             "education": "educação.ts",
             "contact": "contato.tf",
-            "portfolio": "portifólio.py"
+            "portfolio": "portifólio.java"
         }
     },
     "about": {
