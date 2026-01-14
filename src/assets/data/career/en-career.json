@@ -1,10 +1,37 @@
 [
     {
         "position": "FullStack Developer",
+        "company": "Closer Consulting",
+        "companyCountry": "pt",
+        "dateBegin": "September 2025",
+        "dateEnd": "Present",
+        "activities": [
+            "Implementation of hexagonal architecture in Spring Boot promoting a modular and maintainable codebase. ",
+            "Development of CI/CD pipelines, automating the software delivery process and reducing time-to-market",
+            "Creation of Angular solutions for server-side applications, enhancing user interface and experience.",
+            "Provisioning and management of AWS resources (RDS, Parameter Store, Secret Manager), ensuring secure and scalable infrastructure",
+            "Upgrade of services from Java 17 to Java 21, improving performance and security."
+        ],
+        "stacks": [
+            "Spring Boot",
+            "Hexagonal Architecture",
+            "Angular",
+            "Argos CD",
+            "Docker",
+            "PostgreSQL",
+            "Git Corp",
+            "Scrum",
+            "Mockito",
+            "Junit",
+            "AWS "
+        ]
+    },
+    {
+        "position": "FullStack Developer",
         "company": "Wafx Portugal",
         "companyCountry": "pt",
         "dateBegin": "September 2022",
-        "dateEnd": "Present",
+        "dateEnd": "August 2025",
         "activities": [
             "Incorporated third-party APIs into the web application for data exchange and real-time updates",
             "Utilized Java frameworks such as Spring, Hibernate and Angular",

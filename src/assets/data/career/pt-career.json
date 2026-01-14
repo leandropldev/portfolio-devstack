@@ -1,10 +1,37 @@
 [
     {
-        "position": "Desenvolvedor FullStack",
+        "position": "Desenvolvedor Full Stack",
+        "company": "Closer Consulting",
+        "companyCountry": "pt",
+        "dateBegin": "Setembro 2025",
+        "dateEnd": "Presente",
+        "activities": [
+            "Implementeção de arquitetura hexagonal no Spring boot promovendo um código moldar e de fácil manutenção",
+            "Desenvolvimento de Pipelines CI/CD, automatizando o processo de entrega de software e reduzindo o tempo de entrega no mercado",
+            "Criação de Soluções em angular para aplicações servidor, aprimorando interface de usuário e experiencia",
+            "Provisão e gerenciamento de recursos AWS (RDS, Paramenter Store, Secret Manager), garantindo segurança e infraestrutura escalável",
+            "Atualização de microsserviços do Java 17 para o Java 21, melhorando performace e segurança"
+        ],
+        "stacks": [
+            "Spring Boot",
+            "Hexagonal Architecture",
+            "Angular",
+            "Argos CD",
+            "Docker",
+            "PostgreSQL",
+            "Git Corp",
+            "Scrum",
+            "Mockito",
+            "Junit",
+            "AWS "
+        ]
+    },
+    {
+        "position": "Desenvolvedor Full Stack",
         "company": "Wafx Portugal",
         "companyCountry": "pt",
         "dateBegin": "Setembro 2022",
-        "dateEnd": "Atual",
+        "dateEnd": "Agosto 2025",
         "activities": [
             "Incorporei APIs de terceiros ao aplicativo web para troca de dados e atualizações em tempo real",
             "Utilizei frameworks Java como Spring, Hibernate e Angular",
