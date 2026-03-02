@@ -5,8 +5,8 @@
         "title": "Systems Analysis and Development",
         "institution": "Fatec São Caetano do Sul",
         "location": "São Caetano do Sul, Brasil",
-        "startDate": "2015/09/01",
-        "endDate": "2019/06/01",
+        "startDate": "2012/09/01",
+        "endDate": "2016/08/01",
         "description": "Degree in Systems Analysis and Development, with a focus on building and maintaining web applications. Education centered on fullstack development, with a strong foundation in programming logic, system modeling, and software quality practices. Knowledge of agile methodologies, information security, and integration with cloud services such as AWS.",
         "certificationLink": "fatec_graduation.jpg"
     },
@@ -20,5 +20,16 @@
         "endDate": "2019/06",
         "description": "In this course, you are going to learn how to consume from an Apache Kafka topic and consume from it using a simple Spring Boot Application. This course is not for everyone, as you need basic experience with Maven, Spring Boot and Apache Kafka. This course focuses solely on practicality, thus concepts of Spring Framework or Apache Kafka will not be explained in detail, but instead a small simple project will be built.",
         "certificationLink": "udemy-apache-kafka.jpg"
+    },
+    {
+        "id": 2,
+        "type": "Especialization",
+        "title": "Kafka Streams and Spring Cloud Streams",
+        "institution": "Udemy",
+        "location": "",
+        "startDate": "",
+        "endDate": "2024/02",
+        "description": "The course introduces stream processing concepts through Kafka Streams and Spring Cloud Stream, using a gradual, common‑sense teaching approach to make a complex topic easier to understand. It targets software engineers, data architects, and technical managers who want to design, develop, and test real‑time streaming applications. All examples are built with Spring Boot, using Kafka Streams compatible with Spring Cloud 2020 and tested on Confluent Platform 6.0.0. The course also incorporates practical tools such as IntelliJ IDEA, Maven or Gradle, Log4J2, and JUnit 5. Learners work through numerous hands‑on examples and exercises covering key topics like stream processing architecture, Kafka Streams DSL, serialization formats (JSON, Avro, custom), error handling, exactly‑once semantics, and unit testing. By the end, participants gain the skills needed to build production‑ready streaming applications using the Kafka Streams library within the Spring ecosystem.",
+        "certificationLink": "kafka-streams-springscloud-streams.png"
     }
 ]

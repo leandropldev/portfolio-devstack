@@ -5,8 +5,8 @@
         "title": "Análise e Desenvolvimento de Sistemas",
         "institution": "Fatec São Caetano do Sul",
         "location": "São Caetano do Sul, Brasil",
-        "startDate": "01/09/20215",
-        "endDate": "01/06/2019",
+        "startDate": "2012/09/01",
+        "endDate": "2016/08/01",
         "description": "Graduação em Análise e Desenvolvimento de Sistemas, com ênfase na construção e manutenção de aplicações web. Formação voltada ao desenvolvimento fullstack, com base sólida em lógica de programação, modelagem de sistemas e práticas de qualidade de software. Conhecimento em metodologias ágeis, segurança da informação e integração com serviços em nuvem, como AWS.",
         "certificationLink": "https://drive.google.com/file/d/1KYm8xe1G3ZttWyvT_Z89iliBpSZCAjNt/view?usp=drive_link"
     },
@@ -20,5 +20,16 @@
         "endDate": "06/2019",
         "description": "Neste curso, você aprenderá a consumir a partir de um tópico do Apache Kafka e a partir dele usando uma aplicação Spring Boot simples. Este curso não é para todos, pois você precisa de experiência básica com Maven, Spring Boot e Apache Kafka. Este curso se concentra exclusivamente na prática, portanto, os conceitos do Spring Framework ou do Apache Kafka não serão explicados em detalhes, mas sim um pequeno projeto simples que será construído.",
         "certificationLink": "udemy-apache-kafka.jpg"
+    },
+    {
+        "id": 2,
+        "type": "Especialização",
+        "title": "Kafka Streams and Spring Cloud Streams",
+        "institution": "Udemy",
+        "location": "",
+        "startDate": "",
+        "endDate": "2024/02",
+        "description": "O curso apresenta os conceitos de processamento de streams por meio do Kafka Streams e Spring Cloud Stream, adotando uma abordagem progressiva para facilitar a compreensão de um tema complexo. Ele é direcionado a engenheiros de software, arquitetos de dados e gestores técnicos que desejam projetar, desenvolver e testar aplicações de streaming em tempo real. Os exemplos utilizam Spring Boot e a biblioteca Kafka Streams compatível com o Spring Cloud 2020, testados na Confluent Platform 6.0.0. O curso também faz uso prático de ferramentas como IntelliJ IDEA, Maven ou Gradle, Log4J2 e JUnit 5. Os participantes trabalham com diversos exemplos e exercícios que abordam temas essenciais, como arquitetura de processamento de streams, Kafka Streams DSL, formatos de serialização (JSON, Avro e personalizados), tratamento de erros, semântica de exactly-once e testes unitários. Ao final, os alunos desenvolvem as competências necessárias para criar aplicações de streaming prontas para produção usando Kafka Streams dentro do ecossistema Spring.",
+        "certificationLink": "kafka-streams-springscloud-streams.png"
     }
 ]
